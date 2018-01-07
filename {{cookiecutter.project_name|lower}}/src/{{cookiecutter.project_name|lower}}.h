@@ -21,8 +21,6 @@
 #  include <config.h>
 #endif
 
-#include "log.h"
-
 #include <stdlib.h>
 
 /* TODO:5001 Declare here functions that you will use in several files. Those

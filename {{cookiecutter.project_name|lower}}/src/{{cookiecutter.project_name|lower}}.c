@@ -21,12 +21,7 @@
 
 int main(int argc, char **argv)
 {
-	log_init(debug, __progname);
-
 	/* TODO:3000 It's time for you program to do something. Add anything
 	 * TODO:3000 you want here. */
-	log_info("main", "hello world!");
-	log_warnx("main", "your program does nothing");
-
 	return EXIT_SUCCESS;
 }
