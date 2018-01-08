@@ -31,3 +31,4 @@ Makefile.in
 /GRTAGS
 /GSYMS
 /GTAGS
+{{cookiecutter.project_name|lower}}
