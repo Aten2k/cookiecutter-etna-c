@@ -1,20 +1,38 @@
-CC	= gcc
-CFLAGS	= -Wall -Wextra -Werror -pedantic
-OBJ	= $(SRC:.c=.o)
+##
+## Makefile for {{cookiecutter.project_name|lower}} in /home/work/{{cookiecutter.project_name}}
+##
+## Made by {{cookiecutter.full_name}}
+## Login   <{{cookiecutter.email}}>
+##
+## Started on  Fri Nov  10 21:33:56 2017 {{cookiecutter.full_name}}
+## Last update Fri Nov  10 21:33:56 2017 {{cookiecutter.full_name}}
+##
 
-SRC	= 
-RM	= rm -rf
-NAME	= {{cookiecutter.project_name|lower}}
+CC          =   gcc
+CFLAGS      =   -W -Wall -Werror -pedantic
+RM          =   rm -f
+NAME        =   {{cookiecutter.project_name|lower}}
+SRC			=   src/main.c              \
+				src/{{cookiecutter.project_name|lower}}
 
 
-.PHONY: all clean fclean re
+OBJ     = $(SRC:.c=.o)
 
-all: $(NAME)
+$(NAME) : $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
-clean:
+debug   : $(OBJ)
+	$(CC) $(CFLAGS) -g3 $(OBJ) -o $(NAME)
+
+all     : $(NAME)
+
+clean   :
 	$(RM) $(OBJ)
 
-fclean: clean
+fclean  : clean
 	$(RM) $(NAME)
 
-re: fclean all
+re      : fclean $(NAME)
+
+.PHONY  : clean fclean all re
+

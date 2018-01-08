@@ -14,12 +14,8 @@
 ** OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 */
 
-#ifndef _BOOTSTRAP_H
-#define _BOOTSTRAP_H
-
-#if HAVE_CONFIG_H
-#  include <config.h>
-#endif
+#ifndef _{{cookiecutter.project_name|upper}}_H
+#define _{{cookiecutter.project_name|upper}}_H
 
 #include <stdlib.h>
 

@@ -19,7 +19,7 @@
 
 #include "{{cookiecutter.project_name|lower}}.h"
 
-int main(int argc, char **argv)
+int main()
 {
 	/* TODO:3000 It's time for you program to do something. Add anything
 	 * TODO:3000 you want here. */
