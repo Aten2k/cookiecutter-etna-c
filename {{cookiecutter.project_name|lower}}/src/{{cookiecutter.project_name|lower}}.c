@@ -21,7 +21,6 @@
 
 int main()
 {
-	/* TODO:3000 It's time for you program to do something. Add anything
-	 * TODO:3000 you want here. */
-	return EXIT_SUCCESS;
+    return (EXIT_SUCCESS);
 }
+

@@ -9,11 +9,10 @@
 ##
 
 CC          =   gcc
-CFLAGS      =   -W -Wall -Werror -pedantic
+CFLAGS      =   -W -Wall -Werror -pedantic -Iincludes
 RM          =   rm -f
 NAME        =   {{cookiecutter.project_name|lower}}
-SRC			=   src/main.c              \
-				src/{{cookiecutter.project_name|lower}}
+SRC			=	src/{{cookiecutter.project_name|lower}}.c
 
 
 OBJ     = $(SRC:.c=.o)
@@ -32,7 +31,5 @@ clean   :
 fclean  : clean
 	$(RM) $(NAME)
 
-re      : fclean $(NAME)
-
-.PHONY  : clean fclean all re
+.PHONY  : clean debug fclean all
 
