@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAten2k%2Fcookiecutter-etna-c.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FAten2k%2Fcookiecutter-etna-c?ref=badge_shield)
+
 cookiecutter-etna-c
 ===========
 
@@ -41,3 +43,7 @@ Once you want to make a release, tag the tree with `git tag 1.3`, then
 run the previous commands from the top. You'll get a properly
 versioned tarball with a `ChangeLog` file if this is not your first
 version.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FAten2k%2Fcookiecutter-etna-c.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FAten2k%2Fcookiecutter-etna-c?ref=badge_large)
